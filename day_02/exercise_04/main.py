@@ -1,9 +1,17 @@
-height = 1.65 
-weight = 84
+weight = 85
+height = 1.85
 
-# Write your code here.
-# Calculate the bmi using weight and height.
-bmi = weight / (height**2)
+bmi = weight / (height ** 2)
+
+# 🚨 Do not modify the values above
+# Write your code below 👇
+
+if bmi < 18.8:
+    print("underweight")
+elif 18.5 <= bmi < 25:
+    print("normal weight")
+else:
+    print("overweight")
 
 print(round(bmi, 2))
 print(f"{bmi:.2f}")
